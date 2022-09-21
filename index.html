@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora basica</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora Basica</h1>
+    </header>
+    <div class="container">
+      <form>
+        <div class="input-group">
+          <input class="text" id="celda1" type="number" name="" value="" required placeholder="Número" autocomplete="off">
+          <input class="text"id="celda2" type="number" name="" value=""  required placeholder="Número" autocomplete="off"><br>
+          <textarea name="" id="result" cols="43" rows="5" disabled></textarea>
+        </div>
+        <div class="botones">
+          <input class="boton" type="button" onclick="suma(getnumber())" name="Suma" value="Suma">
+          <input class="boton" type="button" onclick="resta(getnumber())" name="Resta" value="Resta">
+          <input class="boton" type="button" onclick="multi(getnumber())" name="Multiplicacion" value="Multiplicacion">
+          <input class="boton" type="button" onclick="div(getnumber())" name="Division" value="Division">
+          <input class="boton" type="reset" value="Limpiar">
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="operaciones.js"></script>
+  </body>
+</html>
